@@ -1,27 +1,15 @@
 # TodoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+This project was made with Angular. I've decided to not use some frameworks to HTML and CSS. Logical code was made with TypeScript.
 
-## Development server
+## How does it works
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+It's a simple todo list that you can save your list to not forget about your daily tasks. It use local storage to save your list and tasks. You need just to keep using the same browser and same computer/smartphone to keep your progress in.
 
-## Code scaffolding
+## Why I've done it?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+It was a pratical project, that i skipped the class to try make this app by myself. The interface and logical parts, are all made by my hands and brain haha.
 
-## Build
+I'll post later the same project made following the steps from class and post down in this README. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tests with Karma/Jasmine was not made
