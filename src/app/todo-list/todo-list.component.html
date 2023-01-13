@@ -1,0 +1,26 @@
+<main>
+    <section class="header">
+        My To-do List
+    </section>
+
+    <div class="task-card">
+        <div class="inside-card" *ngFor="let task of taskList; index as i">
+            <div class="task-item"*ngIf="!task.isChecked; else checked">
+                <input type="checkbox" class="checkbox" (click)="checkboxPos(i)"> 
+                <span>{{ task.taskName }}</span>
+            </div>
+            <ng-template #checked>
+                <div class="task-item">
+                    <input type="checkbox" class="checkbox" (click)="checkboxPos(i)" [checked]="true">
+                    <s>{{ task.taskName }}</s>
+                </div>
+            </ng-template>
+            <button class="btn-delete" (click)="delete(i)"><fa-icon [icon]="fontAwesome" class="fa" ></fa-icon></button>
+        </div>
+    </div>
+
+    <div class="task-new">
+        <input type="text" class="task-input" [placeholder]="placeholder" [(ngModel)]="task" (keydown.enter)="save()" maxlength="34">
+    </div>
+    <button class="btn-delete-all" (click)="deleteAll()">Delete all</button>
+</main>

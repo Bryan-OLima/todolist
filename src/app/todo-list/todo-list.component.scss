@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #af7eeb;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 2px;
+    width: 350px;
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.background {
+    height: 180px;
+    width: 230px;
+    background-color: #000;
+    // background-image: url('https://t.ctcdn.com.br/essK16aBUDd_65hp5umT3aMn_i8=/400x400/smart/filters:format(webp)/i606944.png');
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: #fff;
+    min-height: 200px;
+    width: 310px !important;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(175, 126, 235, 0.2);
+    margin-bottom: -15px;
+}
+
+.task-card-empty {
+    background-color: #ff0000;
+}
+
+.inside-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task-item {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #939cbd;
+}
+
+.checkbox {
+    margin-right: 15px;
+}
+
+.task-input {
+    height: 35px;
+    width: 250px;
+    border: none;
+    color: #fff;
+    background-color: #af7eeb;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn-delete-all {
+    width: 200px !important;
+    text-decoration: none;
+    border: none;
+    height: 35px;
+    background-color: #ff002e;
+    border-radius: 40px;
+    color: #ececec;
+    transition: 0.2s;
+}
+
+.btn-delete-all:hover {
+    cursor: pointer;
+    background-color: #ec002b;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.btn-delete-all, .header, .task-card {
+    width: 350px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    border: 1px black;
+}
+
+.fa {
+    color: #939cbd;
+    width: 20px !important;
+}
+
+.fa:hover {
+    cursor: pointer;
+}

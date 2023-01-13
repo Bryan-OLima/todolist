@@ -1,0 +1,9 @@
+<p>
+    name: <input type="text" [(ngModel)]="name"><br>
+</p>
+<button (click)="sendDataToSave()">Save</button>
+<button (click)="testFunction()">teste data</button>
+
+<div *ngFor="let task of taskList; index as i">
+    {{ [i] }} {{ task.taskName }} 
+</div>
